@@ -1,0 +1,6 @@
+#!/bin/sh
+
+PID=`pgrep qemu-system-riscv64`
+if [ $? -eq 0 ]; then
+    kill $PID
+fi
